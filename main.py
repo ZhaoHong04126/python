@@ -107,3 +107,8 @@ if (My_Month >= "01" and My_Month <= "12") and (My_Day >= "01" and My_Day <= "31
         print("星座特質:", "認真、嚴謹、實事求是，把吃苦當作吃補，就是摩羯的驚人天賦！所謂「吃得苦中苦，方為人上人」，這句話用在摩羯是再適合也不過了。天生的毅力與決心，使他們為了達到心目中的夢想，就算遇到挫折也能咬牙撐過去，永遠認真往前走。適合的工作：法官、公務人員、高階主管、房地產人員。")
 else :
     print("輸入錯誤")
+
+print("\n ------- 額外實作 --------- ")
+Life_Path_Number = int(My_Year[:1]) + int(My_Year[1:2]) + int(My_Year[2:3]) + int(My_Year[3:4]) + int(My_Month[:1]) + int(My_Month[1:2]) + int(My_Day[:1]) + int(My_Day[1:2])
+
+print("生命靈數:", Life_Path_Number)
