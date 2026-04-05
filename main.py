@@ -66,7 +66,7 @@ if (My_Month >= "01" and My_Month <= "12") and (My_Day >= "01" and My_Day <= "31
         print("出生日期為:", My_Year ,"年", My_Month,"月", My_Day,"日" )
         print("星座: 金牛座")
         print("星座特質:", "個性溫和、遇事沉著、對於金錢與美好的事物高度敏感，是金牛與生俱來的天賦。因此，理財方面的工作，或是與美感、美食相關的工作，都能讓金牛大展身手。適合工作：廚師、美食評論家、服裝設計師、理財專家、保險從業人員。")
-    # 雙魚座
+    # 雙子座
     elif (My_Month == "05" and My_Day >= "21") or (My_Month == "06" and My_Day <= "20") :
         print("出生日期為:", My_Year ,"年", My_Month,"月", My_Day,"日" )
         print("星座: 雙子座")
