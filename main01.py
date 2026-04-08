@@ -130,7 +130,6 @@ while True:
                     new_total = new_total + int(char)
                     total = new_total
             print("生命靈數:", total)
-            break
         else:
             print("輸入錯誤，請輸入 8 碼")
     # 4. 查詢生肖
