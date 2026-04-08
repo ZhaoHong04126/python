@@ -1,10 +1,10 @@
 print(" 星座判斷程式 ")
 print(" 請輸入生日資訊，程式將輸出對應星座與特質 ")
-print("\n -------- Input Block -------- ")
+print(" -------- Input Block -------- ")
 
 My_Birthday = input("請輸入生日 YYYYMMDD : ")
 
-print("\n ------- Output Block --------- ")
+print(" ------- Output Block --------- ")
 
 My_Year = My_Birthday[:4]
 My_Month = My_Birthday[4:6]
@@ -12,7 +12,8 @@ My_Day = My_Birthday[6:]
 
 Year = int(My_Birthday[:4])  # 為了判斷平年閏年
 
-if (My_Month >= "01" and My_Month <= "12") and (My_Day >= "01" and My_Day <= "31"):
+
+if (My_Month >= "01" and My_Month <= "12") and (My_Day >= "01" and My_Day <= "31") and (len(My_Birthday) == 8):
     if Year % 400 == 0:
         print(Year,"年為閏年")
     elif Year % 100 == 0:
@@ -107,7 +108,7 @@ if (My_Month >= "01" and My_Month <= "12") and (My_Day >= "01" and My_Day <= "31
         print("星座: 摩羯座")
         print("星座特質:", "認真、嚴謹、實事求是，把吃苦當作吃補，就是摩羯的驚人天賦！所謂「吃得苦中苦，方為人上人」，這句話用在摩羯是再適合也不過了。天生的毅力與決心，使他們為了達到心目中的夢想，就算遇到挫折也能咬牙撐過去，永遠認真往前走。適合的工作：法官、公務人員、高階主管、房地產人員。")
 
-    print("\n ------- 額外實作 --------- ")
+    # print("\n ------- 額外實作 --------- ")
     total = 0
     for digit in My_Birthday:
         total = total + int(digit)
@@ -124,31 +125,30 @@ if (My_Month >= "01" and My_Month <= "12") and (My_Day >= "01" and My_Day <= "31
 
     print("生命靈數:", total)
 
-    match Year % 12:
+    match ( Year - 4 ) % 12:
         case 0:
-            print("西元", Year, "年的生肖是: 猴")
-        case 1:
-            print("西元", Year, "年的生肖是: 雞")
-        case 2:
-            print("西元", Year, "年的生肖是: 狗")
-        case 3:
-            print("西元", Year, "年的生肖是: 豬")
-        case 4:
             print("西元", Year, "年的生肖是: 鼠")
-        case 5:
+        case 1:
             print("西元", Year, "年的生肖是: 牛")
-        case 6:
+        case 2:
             print("西元", Year, "年的生肖是: 虎")
-        case 7:
+        case 3:
             print("西元", Year, "年的生肖是: 兔")
-        case 8:
+        case 4:
             print("西元", Year, "年的生肖是: 龍")
-        case 9:
+        case 5:
             print("西元", Year, "年的生肖是: 蛇")
-        case 10:
+        case 6:
             print("西元", Year, "年的生肖是: 馬")
-        case 11:
+        case 7:
             print("西元", Year, "年的生肖是: 羊")
-
+        case 8:
+            print("西元", Year, "年的生肖是: 猴")
+        case 9:
+            print("西元", Year, "年的生肖是: 雞")
+        case 10:
+            print("西元", Year, "年的生肖是: 狗")
+        case 11:
+            print("西元", Year, "年的生肖是: 猪")
 else :
     print("輸入錯誤，請輸入 8 碼")
