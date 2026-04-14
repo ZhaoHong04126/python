@@ -46,7 +46,7 @@ while True:
                     elif Year % 4 == 0:
                         is_leap = True
                     
-                    # 根據閏年狀態決定 2 月最大天數
+                    # 根據年份狀態決定 2 月最大天數
                     max_feb_days = 29 if is_leap else 28
                     
                     # 判斷輸入的天數是否合理
