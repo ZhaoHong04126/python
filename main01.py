@@ -39,11 +39,12 @@ while True:
                 if My_Month == "02":
                     # 閏年判斷邏輯
                     is_leap = False
-                    if Year % 400 == 0:
+                    actual_year = int(My_Year) # 先轉換成整數
+                    if actual_year % 400 == 0:
                         is_leap = True
-                    elif Year % 100 == 0:
+                    elif actual_year % 100 == 0:
                         is_leap = False
-                    elif Year % 4 == 0:
+                    elif actual_year % 4 == 0:
                         is_leap = True
                     
                     # 根據年份狀態決定 2 月最大天數
@@ -128,7 +129,7 @@ while True:
                 new_total = 0
                 for char in total_str:
                     new_total = new_total + int(char)
-                    total = new_total
+                total = new_total
             print("生命靈數:", total)
         else:
             print("輸入錯誤，請輸入 8 碼")
